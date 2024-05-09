@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        
+    </head>
+    <body class="text-bg-dark">
+
+        <div class="container">
+            <div class="row px-1 align-items-center" style="height: 98vh;">
+                <div class="col-md-4 rounded-5 border border-2 border-success p-2 text-center mx-auto">
+                    <h1 class="mb-5">Simple Calculator</h1>
+                    
+                        <input name="answer" id="answer" class="form-control" type="text">
+                    <br>
+                    <div class="container">
+                        <button class="m-1 btn btn-lg btn-danger" style="padding-left: 9px; padding-right: 9px;" onclick="clearAll()">AC</button>
+
+                        <button class="m-1 btn btn-lg btn-primary" style="padding-left: 18px; padding-right: 18px;" onclick="addFirstBracket()">&#40</button>
+    
+                        <button class="m-1 btn btn-lg btn-primary" style="padding-left: 18px; padding-right: 18px;" onclick="addSecondBracket()">&#41</button>
+
+                        <button class="m-1 btn btn-lg btn-warning" onclick="addplus()">&#43</button>
+                        <br>
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addOne()">1</button>
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addTwo()">2</button>
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addThree()">3</button>
+                        <button class="m-1 btn btn-lg btn-warning" onclick="addSubtract()">&#8722</button>
+                        <br>
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addFour()">4</button>
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addFive()">5</button>
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addSix()">6</button>
+                        <button class="m-1 btn btn-lg btn-warning" onclick="addMulti()">&#215</button>
+                        <br>
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addSeven()">7</button>
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addEight()">8</button>
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addNine()">9</button>
+                        <button class="m-1 btn btn-lg btn-warning" onclick="addDivide()">&#247</button>
+                        <br>
+                        
+                        <button class="m-1 btn btn-lg btn-primary" onclick="addZero()">0</button>
+                        <button class="m-1 btn btn-lg btn-primary" style="padding-left: 19.5px; padding-right: 19.5px;" onclick="addPoint()">&#8729</button>
+                        <button class="m-1 btn btn-lg btn-success" style="padding-left: 14px; padding-right: 14px;" onclick="backSpace()">&#8882</button>
+                        <button class="m-1 btn btn-lg btn-success" onclick="equal()">&#61</button>
+                        <br>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+
+        
+        <script src="SimpleCalculatorScript.js"></script>
+    </body>
+</html>
